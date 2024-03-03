@@ -7,11 +7,7 @@ func insert(value int, index int, dataSlice []int) []int {
 }
 
 func InsertionSort(dataSlice []int) []int {
-	length := len(dataSlice)
-	if length == 0 {
-		return dataSlice
-	}
-	for i := 1; i < length; i++ {
+	for i := 1; i < len(dataSlice); i++ {
 		currentValue := dataSlice[i]
 		dataSlice = append(dataSlice[:i], dataSlice[i+1:]...)
 		insertionAt := i

@@ -1,16 +1,21 @@
 package bubbleSort
 
-import "fmt"
+func isSorted(dataSlice []int) bool {
+	length := len(dataSlice)
+	for i := 0; i < length-1; i++ {
+		if dataSlice[i] > dataSlice[i+1] {
+			return false
+		}
+	}
+	return true
+}
 
 func BubbleSort(dataSlice []int) []int {
-	length := len(dataSlice)
-	if length == 0 {
-		return dataSlice
-	}
-	for i := 0; i < length-1; i++ {
-		fmt.Println(dataSlice)
-		if dataSlice[i] > dataSlice[i+1] {
-			dataSlice[i], dataSlice[i+1] = dataSlice[i+1], dataSlice[i]
+	for !isSorted(dataSlice) {
+		for i := 0; i < len(dataSlice)-1; i++ {
+			if dataSlice[i] > dataSlice[i+1] {
+				dataSlice[i], dataSlice[i+1] = dataSlice[i+1], dataSlice[i]
+			}
 		}
 	}
 	return dataSlice
