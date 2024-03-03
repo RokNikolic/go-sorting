@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/RokNikolic/Sorting-Algorithms-in-Go/insertionSort"
+	"github.com/RokNikolic/Sorting-Algorithms-in-Go/bubbleSort"
 	"math/rand"
 )
 
@@ -11,7 +11,7 @@ func generateRandSlice(numOfElements int) []int {
 }
 
 func main() {
-	randomSlice := generateRandSlice(1000)
-	sortedSlice := insertionSort.InsertionSort(randomSlice)
+	randomSlice := generateRandSlice(10)
+	sortedSlice := bubbleSort.BubbleSort(randomSlice)
 	fmt.Print(sortedSlice)
 }

@@ -1,24 +1,24 @@
 package insertionSort
 
-func insert(value int, index int, slice []int) []int {
-	slice = append(slice[:index+1], slice[index:]...)
-	slice[index] = value
-	return slice
+func insert(value int, index int, dataSlice []int) []int {
+	dataSlice = append(dataSlice[:index+1], dataSlice[index:]...)
+	dataSlice[index] = value
+	return dataSlice
 }
 
-func InsertionSort(slice []int) []int {
-	length := len(slice)
+func InsertionSort(dataSlice []int) []int {
+	length := len(dataSlice)
 	if length == 0 {
-		return slice
+		return dataSlice
 	}
 	for i := 1; i < length; i++ {
-		currentValue := slice[i]
-		slice = append(slice[:i], slice[i+1:]...)
+		currentValue := dataSlice[i]
+		dataSlice = append(dataSlice[:i], dataSlice[i+1:]...)
 		insertionAt := i
-		for insertionAt > 0 && slice[insertionAt-1] > currentValue {
+		for insertionAt > 0 && dataSlice[insertionAt-1] > currentValue {
 			insertionAt -= 1
 		}
-		slice = insert(currentValue, insertionAt, slice)
+		dataSlice = insert(currentValue, insertionAt, dataSlice)
 	}
-	return slice
+	return dataSlice
 }
