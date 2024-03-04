@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
+	selectionsort "github.com/RokNikolic/Sorting-Algorithms-in-Go/selectionSort"
 	"math/rand"
-
-	cocktailsort "github.com/RokNikolic/Sorting-Algorithms-in-Go/cocktailSort"
 )
 
 func generateRandSlice(numOfElements int) []int {
@@ -13,6 +12,6 @@ func generateRandSlice(numOfElements int) []int {
 
 func main() {
 	randomSlice := generateRandSlice(1000)
-	sortedSlice := cocktailsort.CocktailSort(randomSlice)
+	sortedSlice := selectionsort.SelectionSort(randomSlice)
 	fmt.Println(sortedSlice)
 }
