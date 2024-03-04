@@ -1,4 +1,4 @@
-package bubbleSort
+package bubblesort
 
 // A very simple and slow algorithm mostly used for education.
 // Worst case: O(n²), for sorted list: O(n).

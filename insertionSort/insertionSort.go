@@ -1,4 +1,4 @@
-package insertionSort
+package insertionsort
 
 // One of the best simple O(n²) algorithms, similar to selection sort but faster.
 // Worst case: O(n²), for sorted list: O(n).
