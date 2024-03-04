@@ -1,5 +1,8 @@
 package bubbleSort
 
+// A very simple and slow algorithm mostly used for education.
+// Worst case: O(n²), for sorted list: O(n).
+
 func BubbleSort(dataSlice []int) []int {
 	sorted := false
 	for !sorted {

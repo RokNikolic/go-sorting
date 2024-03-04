@@ -1,5 +1,8 @@
 package insertionSort
 
+// One of the best simple O(n²) algorithms, similar to selection sort but faster.
+// Worst case: O(n²), for sorted list: O(n).
+
 func insert(value int, index int, dataSlice []int) []int {
 	dataSlice = append(dataSlice[:index+1], dataSlice[index:]...)
 	dataSlice[index] = value
