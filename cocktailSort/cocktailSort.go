@@ -1,8 +1,5 @@
 package cocktailsort
 
-// An improvment to Bubble sort by using it bidirectionally.
-// Worst case: O(n²), for sorted list: O(n). Typicaly less then 2x faster than bubble sort.
-
 func CocktailSort(dataSlice []int) []int {
 	sorted := false
 	for !sorted {
