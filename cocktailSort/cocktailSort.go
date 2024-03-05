@@ -1,5 +1,7 @@
 package cocktailsort
 
+// Improvement to Bubble sort, using it bidirectionally
+
 func CocktailSort(dataSlice []int) []int {
 	sorted := false
 	for !sorted {

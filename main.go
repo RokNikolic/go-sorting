@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	selectionsort "github.com/RokNikolic/Sorting-Algorithms-in-Go/selectionSort"
+	combsort "github.com/RokNikolic/Sorting-Algorithms-in-Go/combSort"
 	"math/rand"
 )
 
@@ -11,7 +11,7 @@ func generateRandSlice(numOfElements int) []int {
 }
 
 func main() {
-	randomSlice := generateRandSlice(1000)
-	sortedSlice := selectionsort.SelectionSort(randomSlice)
+	randomSlice := generateRandSlice(100)
+	sortedSlice := combsort.CombSort(randomSlice)
 	fmt.Println(sortedSlice)
 }
