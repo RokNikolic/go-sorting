@@ -12,6 +12,6 @@ func generateRandSlice(numOfElements int) []int {
 
 func main() {
 	randomSlice := generateRandSlice(100)
-	sortedSlice := exchangesorts.CocktailSort(randomSlice)
+	sortedSlice := exchangesorts.GnomeSort(randomSlice)
 	fmt.Println(sortedSlice)
 }
