@@ -1,4 +1,4 @@
-package insertionsort
+package insertionsorts
 
 func insert(value int, index int, dataSlice []int) []int {
 	dataSlice = append(dataSlice[:index+1], dataSlice[index:]...)

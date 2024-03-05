@@ -1,4 +1,4 @@
-package combsort
+package exchangesorts
 
 import (
 	"math"

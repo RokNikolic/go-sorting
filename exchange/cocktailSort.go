@@ -1,4 +1,4 @@
-package cocktailsort
+package exchangesorts
 
 // Improvement to Bubble sort, using it bidirectionally
 

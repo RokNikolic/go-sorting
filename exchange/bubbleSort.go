@@ -1,4 +1,4 @@
-package bubblesort
+package exchangesorts
 
 func BubbleSort(dataSlice []int) []int {
 	sorted := false
