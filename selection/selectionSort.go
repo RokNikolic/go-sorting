@@ -1,7 +1,7 @@
 package selectionsorts
 
 func SelectionSort(dataSlice []int) []int {
-	for i := 0; i < len(dataSlice); i++ {
+	for i := range len(dataSlice) {
 		minIndex := i
 		for j := i; j < len(dataSlice); j++ {
 			if dataSlice[j] < dataSlice[minIndex] {
