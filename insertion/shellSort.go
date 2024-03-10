@@ -3,8 +3,8 @@ package insertionsorts
 // Improvement on insertion sort, using a decreasing gap to move outer elements fast
 
 func ShellSort(dataSlice []int) []int {
-	gaps := []int{701, 301, 132, 57, 23, 10, 4, 1} // Ciura gap sequence
-	for _, gap := range gaps {
+	gap := len(dataSlice) / 2
+	for gap > 0 {
 		for i := gap; i < len(dataSlice); i++ {
 			currentValue := dataSlice[i]
 			dataSlice = append(dataSlice[:i], dataSlice[i+1:]...)
@@ -14,6 +14,7 @@ func ShellSort(dataSlice []int) []int {
 			}
 			dataSlice = insert(currentValue, insertionAt, dataSlice)
 		}
+		gap = gap / 2
 	}
 	return dataSlice
 }
