@@ -1,4 +1,4 @@
-package exchangesorts
+package sort
 
 // Improvement to Bubble sort, using it bidirectionally
 

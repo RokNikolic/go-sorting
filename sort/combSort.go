@@ -1,4 +1,4 @@
-package exchangesorts
+package sort
 
 import (
 	"math"

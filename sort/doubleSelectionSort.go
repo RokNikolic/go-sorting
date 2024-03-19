@@ -1,4 +1,4 @@
-package selectionsorts
+package sort
 
 // Improvement to Selection sort, finding both min and max elements
 

@@ -1,4 +1,4 @@
-package selectionsorts
+package sort
 
 func SelectionSort(dataSlice []int) []int {
 	for i := range len(dataSlice) {

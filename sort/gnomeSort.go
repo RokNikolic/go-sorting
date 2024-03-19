@@ -1,4 +1,4 @@
-package exchangesorts
+package sort
 
 func GnomeSort(dataSlice []int) []int {
 	i := 0

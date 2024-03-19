@@ -1,4 +1,4 @@
-package insertionsorts
+package sort
 
 // Improvement on insertion sort, using a decreasing gap to move outer elements fast
 
