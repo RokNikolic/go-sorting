@@ -17,4 +17,10 @@ Implementations of several sorting algorithms in Go 1.22.
   - Insertion sort
   - Shell sort
   - Quick sort
-    
+
+
+- TODO:
+  - Merge sort
+  - Heap sort
+  - Radix sort
+  - Bucket sort
