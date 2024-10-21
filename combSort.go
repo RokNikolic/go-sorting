@@ -6,7 +6,7 @@ import (
 
 // Improvement to Bubble sort, using a variable gap
 
-func CombSort(dataSlice []int) []int {
+func CombSort(dataSlice []int) {
 	idealShrinkFactor := 1.3
 	gap := len(dataSlice)
 	sorted := false
@@ -21,11 +21,10 @@ func CombSort(dataSlice []int) []int {
 		i := 0
 		for i+gap < len(dataSlice) {
 			if dataSlice[i] > dataSlice[i+gap] {
-				dataSlice[i], dataSlice[i+gap] = dataSlice[i+gap], dataSlice[i]
+				swapElements(dataSlice, i, i+gap)
 				sorted = false
 			}
 			i++
 		}
 	}
-	return dataSlice
 }

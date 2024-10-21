@@ -2,7 +2,7 @@ package sort
 
 // Improvement on insertion sort, using a decreasing gap to move outer elements fast
 
-func ShellSort(dataSlice []int) []int {
+func ShellSort(dataSlice []int) {
 	gap := len(dataSlice) / 2
 	for gap > 0 {
 		for i := gap; i < len(dataSlice); i++ {
@@ -12,9 +12,8 @@ func ShellSort(dataSlice []int) []int {
 			for insertionAt >= gap && dataSlice[insertionAt-gap] > currentValue {
 				insertionAt -= gap
 			}
-			dataSlice = insert(currentValue, insertionAt, dataSlice)
+			dataSlice = insert(dataSlice, currentValue, insertionAt)
 		}
 		gap = gap / 2
 	}
-	return dataSlice
 }

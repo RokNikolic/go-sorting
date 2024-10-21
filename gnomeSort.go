@@ -1,14 +1,15 @@
 package sort
 
-func GnomeSort(dataSlice []int) []int {
+// "Stupid sort"
+
+func GnomeSort(dataSlice []int) {
 	i := 0
 	for i < len(dataSlice) {
 		if i == 0 || dataSlice[i] >= dataSlice[i-1] {
 			i++
 		} else {
-			dataSlice[i], dataSlice[i-1] = dataSlice[i-1], dataSlice[i]
+			swapElements(dataSlice, i, i-1)
 			i--
 		}
 	}
-	return dataSlice
 }

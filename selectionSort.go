@@ -1,6 +1,6 @@
 package sort
 
-func SelectionSort(dataSlice []int) []int {
+func SelectionSort(dataSlice []int) {
 	for i := range len(dataSlice) {
 		minIndex := i
 		for j := i; j < len(dataSlice); j++ {
@@ -9,8 +9,7 @@ func SelectionSort(dataSlice []int) []int {
 			}
 		}
 		if i != minIndex {
-			dataSlice[i], dataSlice[minIndex] = dataSlice[minIndex], dataSlice[i]
+			swapElements(dataSlice, i, minIndex)
 		}
 	}
-	return dataSlice
 }

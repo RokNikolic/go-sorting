@@ -2,7 +2,7 @@ package sort
 
 // Improvement to Selection sort, finding both min and max elements
 
-func DoubleSelectionSort(dataSlice []int) []int {
+func DoubleSelectionSort(dataSlice []int) {
 	length := len(dataSlice)
 	for iMin := range length / 2 {
 		iMax := length - iMin - 1
@@ -17,11 +17,10 @@ func DoubleSelectionSort(dataSlice []int) []int {
 			}
 		}
 		if iMin != minIndex {
-			dataSlice[iMin], dataSlice[minIndex] = dataSlice[minIndex], dataSlice[iMin]
+			swapElements(dataSlice, iMin, minIndex)
 		}
 		if iMax != maxIndex {
-			dataSlice[iMax], dataSlice[maxIndex] = dataSlice[maxIndex], dataSlice[iMax]
+			swapElements(dataSlice, iMax, maxIndex)
 		}
 	}
-	return dataSlice
 }
